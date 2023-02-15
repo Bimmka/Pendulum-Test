@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8864400963335082179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874012533458762423}
+  - component: {fileID: 5534620429268229913}
+  - component: {fileID: 1114132975440018042}
+  m_Layer: 0
+  m_Name: GameSceneBootstrapper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1874012533458762423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8864400963335082179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5534620429268229913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8864400963335082179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers: []
+  _monoInstallers:
+  - {fileID: 1114132975440018042}
+  _installerPrefabs: []
+  _autoRun: 1
+  OnPreInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPreResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  _parentNewObjectsUnderSceneContext: 0
+  _contractNames: []
+  _parentContractNames: []
+--- !u!114 &1114132975440018042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8864400963335082179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7e3c49f92e4a12aa44cda1ea795ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelObserverPrefab: {fileID: 3594009028738253228, guid: 493edf5781a8753468d56cc6892f7776, type: 3}
+  deckPrefab: {fileID: 4036485307608012832, guid: 51f109105c537c34db0fb3591fed7a15, type: 3}
+  deckSpawnParent: {fileID: 0}
+  deckSettings: {fileID: 11400000, guid: bce71f630da2a3e438ae7b1aa70881c7, type: 2}
+  userHands: {fileID: 1183751794195884175, guid: 1d22667295d74ed4dbe62623738abe67, type: 3}
+  userHandsParent: {fileID: 0}
+  dealerHands: {fileID: 38822525523178506, guid: ee878385592c8ef43bfa72d0e1e68f20, type: 3}
+  dealerHandsParent: {fileID: 0}
+  gameRules: {fileID: 11400000, guid: 3dfce60fc7a7ea643b2cc82669d9a896, type: 2}
+  npcMachine: {fileID: 7766081321678786722, guid: 4a63ee728609d7f46abafda35ade58a2, type: 3}
+  npcSettings: {fileID: 11400000, guid: 0a736cf3f8a919e44aa71d2442968eb6, type: 2}
+  levelInfoDisplayer: {fileID: 0}
+  perksObserverPrefab: {fileID: 4068667538638254946, guid: 543a41a4a0bc8774ab56b3aaacef188a, type: 3}
+  userHandsAnimationSpawnParent: {fileID: 0}
+  userAnimationPrefab: {fileID: 504969594603957871, guid: 3b79c96897de81d47ba045300a8d2674, type: 3}
