@@ -2,7 +2,7 @@
 
 namespace Features.Services.Assets
 {
-  public interface IAssetProvider
+  public interface IAssetInstantiator
   {
     GameObject Instantiate(string prefabPath);
     T Instantiate<T>(T prefab) where T : Object;

@@ -14,7 +14,7 @@ namespace Features.GameStates.States
     }
     
     public void Enter() => 
-      windowsService.Open(WindowId.LevelEnd);
+      windowsService.Open(WindowId.Win);
 
     public void Exit() { }
   }

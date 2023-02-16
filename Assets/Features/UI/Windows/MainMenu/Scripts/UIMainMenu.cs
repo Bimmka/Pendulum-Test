@@ -1,4 +1,6 @@
 using Features.Constants;
+using Features.GameStates;
+using Features.GameStates.States;
 using Features.Services.UI.Factory;
 using Features.Services.UI.Windows;
 using Features.UI.Windows.Base.Scripts;
@@ -13,12 +15,12 @@ namespace Features.UI.Windows.MainMenu.Scripts
     [SerializeField] private Button playButton;
     [SerializeField] private Button quitButton;
     
-    private IWindowsService windowsService;
+    private IGameStateMachine gameStateMachine;
 
     [Inject]
-    public void Construct(IWindowsService windowsService)
+    public void Construct(IGameStateMachine gameStateMachine)
     {
-      this.windowsService = windowsService;
+      this.gameStateMachine = gameStateMachine;
     }
 
     protected override void Subscribe()
@@ -35,19 +37,10 @@ namespace Features.UI.Windows.MainMenu.Scripts
       quitButton.onClick.RemoveListener(Quit);
     }
 
-    public override void Open()
-    {
-     
-      base.Open();
-      
-    }
-
     private void Quit() => 
       Application.Quit();
 
-    private void StartPlay()
-    {
-      
-    }
+    private void StartPlay() => 
+      gameStateMachine.Enter<GameLoadState>();
   }
 }

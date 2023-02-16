@@ -2,7 +2,7 @@
 
 namespace Features.Services.Assets
 {
-  public class AssetProvider : IAssetProvider
+  public class AssetInstantiator : IAssetInstantiator
   {
     public GameObject Instantiate(string prefabPath)
     {

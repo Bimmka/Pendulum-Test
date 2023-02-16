@@ -3,10 +3,9 @@
   public enum WindowId
   {
     MainMenu = 0,
-    LevelEnd = 1,
-    HUD = 2,
-    Win = 3,
-    Lose = 4,
-    PauseMenu = 5,
+    HUD = 1,
+    Win = 2,
+    Lose = 3,
+    PauseMenu = 4,
   }
 }

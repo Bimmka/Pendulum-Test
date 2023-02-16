@@ -12,7 +12,7 @@ namespace Features.Services.UI.Factory.BaseUI
   public class UIFactory : PlaceholderFactory<BaseWindow>, IUIFactory
   {
     private readonly DiContainer container;
-    private readonly IAssetProvider assets;
+    private readonly IAssetInstantiator assets;
     private readonly IStaticDataService staticData;
 
     private Transform uiRoot;
@@ -20,7 +20,7 @@ namespace Features.Services.UI.Factory.BaseUI
     private Camera mainCamera;
 
     [Inject]
-    public UIFactory(DiContainer container, IAssetProvider assets, IStaticDataService staticData, IWindowsService windowsService)
+    public UIFactory(DiContainer container, IAssetInstantiator assets, IStaticDataService staticData, IWindowsService windowsService)
     {
       this.container = container;
       this.assets = assets;

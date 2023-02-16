@@ -27,7 +27,7 @@ namespace Features.Bootstrapp.Scripts
 
     public override void InstallBindings()
     {
-      BindAssetProvider();
+      BindAssetInstantiator();
       BindStaticData();
       BindCoroutineRunner();
       BindSceneLoading();
@@ -41,8 +41,8 @@ namespace Features.Bootstrapp.Scripts
     private void ResolveGameStatesObserver() => 
       Container.Resolve<GameStatesObserver>().StartGame();
 
-    private void BindAssetProvider() => 
-      Container.Bind<IAssetProvider>().To<AssetProvider>().FromNew().AsSingle();
+    private void BindAssetInstantiator() => 
+      Container.Bind<IAssetInstantiator>().To<AssetInstantiator>().FromNew().AsSingle();
 
     private void BindStaticData() =>
       Container.Bind<IStaticDataService>().To<StaticDataService>().FromNew().AsSingle()
